@@ -20,42 +20,42 @@ $white:                 #fff !default;
 
 // Accent colors
 // -------------------------
-$blue:                  #049cdb !default;
-$blueDark:              #0064cd !default;
-$green:                 #46a546 !default;
-$red:                   #9d261d !default;
-$yellow:                #ffc40d !default;
-$orange:                #f89406 !default;
+$blue:                  #454445 !default;
+$blueDark:              #454445 !default;
+$green:                 #B29C68 !default;
+$red:                   #AB594B !default;
+$yellow:                #DEAF7C !default;
+$orange:                #C28464 !default;
 $pink:                  #c3325f !default;
 $purple:                #7a43b6 !default;
 
 
 // Scaffolding
 // -------------------------
-$bodyBackground:        $white !default;
+$bodyBackground:        #f0f0f0 !default;
 $textColor:             $grayDark !default;
 
 
 // Links
 // -------------------------
-$linkColor:             #08c !default;
+$linkColor:             #AB594B !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 
 // Typography
 // -------------------------
-$sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$sansFontFamily:        "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
-$baseFontSize:          14px !default;
+$baseFontSize:          16px !default;
 $baseFontFamily:        $sansFontFamily !default;
-$baseLineHeight:        20px !default;
+$baseLineHeight:        28px !default;
 $altFontFamily:         $serifFontFamily !default;
 
 $headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
-$headingsFontWeight:    bold !default;    // instead of browser default, bold
-$headingsColor:         inherit !default; // empty to use BS default, $textColor
+$headingsFontWeight:    700 !default;    // instead of browser default, bold
+$headingsColor:         #AB594B !default; // empty to use BS default, $textColor
 
 
 // Component sizing
@@ -66,13 +66,13 @@ $fontSizeLarge:         $baseFontSize * 1.25; // ~18px
 $fontSizeSmall:         $baseFontSize * 0.85; // ~12px
 $fontSizeMini:          $baseFontSize * 0.75; // ~11px
 
-$paddingLarge:          11px 19px !default; // 44px
-$paddingSmall:          2px 10px !default;  // 26px
-$paddingMini:           0px 6px !default;   // 22px
+$paddingLarge:          14px 24px !default; // 44px
+$paddingSmall:          4px 12px !default;  // 26px
+$paddingMini:           0px 8px !default;   // 22px
 
-$baseBorderRadius:      4px !default;
-$borderRadiusLarge:     6px !default;
-$borderRadiusSmall:     3px !default;
+$baseBorderRadius:      2px !default;
+$borderRadiusLarge:     4px !default;
+$borderRadiusSmall:     2px !default;
 
 
 // Tables
@@ -89,7 +89,7 @@ $btnBackgroundHighlight:            darken($white, 10%) !default;
 $btnBorder:                         #ccc !default;
 
 $btnPrimaryBackground:              $linkColor !default;
-$btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
+$btnPrimaryBackgroundHighlight:     darken($btnPrimaryBackground, 5%) !default;
 
 $btnInfoBackground:                 #5bc0de !default;
 $btnInfoBackgroundHighlight:        #2f96b4 !default;
@@ -110,7 +110,7 @@ $btnInverseBackgroundHighlight:     $grayDarker !default;
 // Forms
 // -------------------------
 $inputBackground:               $white !default;
-$inputBorder:                   #ccc !default;
+$inputBorder:                   #454445 !default;
 $inputBorderRadius:             $baseBorderRadius !default;
 $inputDisabledBackground:       $grayLighter !default;
 $formActionsBackground:         #f5f5f5 !default;
@@ -162,7 +162,7 @@ $placeholderText:         $grayLight !default;
 
 // Hr border color
 // -------------------------
-$hrBorder:                $grayLighter !default;
+$hrBorder:                $grayLight !default;
 
 
 // Horizontal forms & lists
@@ -172,7 +172,7 @@ $horizontalComponentOffset:       180px !default;
 
 // Wells
 // -------------------------
-$wellBackground:                  #f5f5f5 !default;
+$wellBackground:                  $white !default;
 
 
 // Navbar
@@ -180,7 +180,7 @@ $wellBackground:                  #f5f5f5 !default;
 $navbarCollapseWidth:             979px !default;
 $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
 
-$navbarHeight:                    40px !default;
+$navbarHeight:                    90px !default;
 $navbarBackgroundHighlight:       #ffffff !default;
 $navbarBackground:                darken($navbarBackgroundHighlight, 5%) !default;
 $navbarBorder:                    darken($navbarBackground, 12%) !default;
@@ -195,23 +195,23 @@ $navbarLinkBackgroundActive:      darken($navbarBackground, 5%) !default;
 $navbarBrandColor:                $navbarLinkColor !default;
 
 // Inverted navbar
-$navbarInverseBackground:                #111111 !default;
-$navbarInverseBackgroundHighlight:       #222222 !default;
-$navbarInverseBorder:                    #252525 !default;
+$navbarInverseBackground:                #454445 !default;
+$navbarInverseBackgroundHighlight:       lighten($navbarInverseBackground, 2%) !default;
+$navbarInverseBorder:                    darken($navbarInverseBackground, 10%) !default;
 
-$navbarInverseText:                      $grayLight !default;
-$navbarInverseLinkColor:                 $grayLight !default;
+$navbarInverseText:                      #AB594B !default;
+$navbarInverseLinkColor:                 $white !default;
 $navbarInverseLinkColorHover:            $white !default;
 $navbarInverseLinkColorActive:           $navbarInverseLinkColorHover !default;
 $navbarInverseLinkBackgroundHover:       transparent !default;
-$navbarInverseLinkBackgroundActive:      $navbarInverseBackground !default;
+$navbarInverseLinkBackgroundActive:      darken($navbarInverseBackground, 10%) !default;
 
 $navbarInverseSearchBackground:          lighten($navbarInverseBackground, 25%) !default;
 $navbarInverseSearchBackgroundFocus:     $white !default;
 $navbarInverseSearchBorder:              $navbarInverseBackground !default;
 $navbarInverseSearchPlaceholderColor:    #ccc !default;
 
-$navbarInverseBrandColor:                $navbarInverseLinkColor !default;
+$navbarInverseBrandColor:                $navbarInverseText !default;
 
 
 // Pagination
@@ -223,7 +223,7 @@ $paginationActiveBackground:          #f5f5f5 !default;
 
 // Hero unit
 // -------------------------
-$heroUnitBackground:              $grayLighter !default;
+$heroUnitBackground:              $white !default;
 $heroUnitHeadingColor:            inherit !default;
 $heroUnitLeadColor:               inherit !default;
 
