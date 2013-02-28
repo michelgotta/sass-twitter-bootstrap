@@ -160,12 +160,12 @@
 
 // Reposition the caret
 .btn .caret {
-  margin-top: 12px;
+  margin-top: 10px;
   margin-left: 0;
 }
 // Carets in other button sizes
 .btn-large .caret {
-  margin-top: 12px;
+  margin-top: 10px;
 }
 .btn-large .caret {
   border-left-width:  5px;
@@ -174,7 +174,7 @@
 }
 .btn-mini .caret,
 .btn-small .caret {
-  margin-top: 12px;
+  margin-top: 10px;
 }
 // Upside down carets for .dropup
 .dropup .btn-large .caret {
